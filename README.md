@@ -11,6 +11,6 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "<github-username>/docker-instance/aws"
+    source = "<ramznagc>/docker-instance/aws"
     key_name = "mykey"
 }

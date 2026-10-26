@@ -63,7 +63,7 @@ resource aws_instance tf_my_ec2 {
   key_name     = var.key_name
   count        = var.num_of_instances
   vpc_security_group_ids = [aws_security_group.tf_sec_group.id]
-  user_data = templatefile("${abspath(path.module)}/user_data.sh", { myserver = var.server_name })
+  user_data = templatefile("${abspath(path.module)}/userdata.sh", { myserver = var.server_name })
   tags = {
     Name = "${var.tag}"
   }
