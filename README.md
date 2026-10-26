@@ -4,13 +4,18 @@ This module is for demonstration purposes only and not intended for production u
 
 It serves as an example to illustrate how to create and publish a module on the Terraform Registry.
 
-Usage:
+**Usage:**
 
+```bash
 provider "aws" {
   region = "us-east-1"
 }
 
 module "docker_instance" {
-    source = "<ramznagc>/docker-instance/aws"
+    source = "ramznagc/docker-instance/aws"
     key_name = "mykey"
 }
+
+
+
+```
